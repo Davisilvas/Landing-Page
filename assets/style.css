@@ -12,7 +12,11 @@ img{
   
   body {
     font-size: 100%;
+}
 
+.container{
+    max-width: 2000px;
+    margin: auto;
 }
 
   .head{
@@ -23,32 +27,11 @@ img{
     padding: 24px;
 }
 
-
-
-.content{
-    margin-bottom: 48px;
-    border-top: 0.4px solid #000000;
-    display: flex;
-    justify-content: space-between;
-    text-align: justify;
-}
-
-.content-foto{
-    margin-right: 50px;
-    margin-left: 20px;
+.principal{
+    display: flex;    
 }
 
 
-
-.content-principal{
-
-}
-
-.content-principal-text-title{
-    text-align: center;
-    overflow: hidden;
-
-}
 
 .rodape{
     display: flex;
@@ -68,3 +51,29 @@ img{
     display: flex;
     margin-left: 10px;
 }
+
+
+
+/* .content{
+    margin-bottom: 48px;
+    border-top: 0.4px solid #000000;
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.content-foto{
+
+}
+
+
+
+.content-principal{
+
+}
+
+.content-principal-text-title{
+    text-align: center;
+    overflow: hidden;
+
+} */
