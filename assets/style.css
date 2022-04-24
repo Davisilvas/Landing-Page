@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
 * {
     margin: 0;
@@ -12,68 +13,95 @@ img{
   
   body {
     font-size: 100%;
+    background: linear-gradient(68.15deg, #000000 16.62%, #1408c9 85.61%);
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container{
-    max-width: 2000px;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
   .head{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 24px;
+    font-size: 20px;
+    border-bottom: 0.4px solid #d1d1d1;
+}
+
+.head-menu{
+    display: flex;
+}
+
+.head-menu-item{
+    display: flex;
+}
+
+.head-menu-item:link{
+    text-decoration: none;
+}
+
+.head-menu-item:visited{
+    text-decoration: none;
 }
 
 .principal{
-    display: flex;    
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+h1{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.fotografia{
+    display: flex;
+}
+
+.principal-text{
+    /* max-width: 2000px; */
+
+}
+
+.principal-text-title{
+    display: flex;
+    justify-content: center;
+}
+
+.principal-text-paragraph{
+    display: flex;
+    font-weight: 300;
+
 }
 
 
-
 .rodape{
+    font-size: 20px;
     display: flex;
-    /* flex-direction: row; */
     align-items: flex-end;
     justify-content: center;
-    padding: 24px; 
-    border-top: 0.4px solid #000000;
+    margin-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 0.4px solid #ffffff;
  
 }
 
 .rodape-list{
     display: flex;
+    list-style: none;
+    /* list-style-image: url(./images/insta1.png); */
 }
 
-.rodape-list-item{
-    display: flex;
-    margin-left: 10px;
-}
-
-
-
-/* .content{
-    margin-bottom: 48px;
-    border-top: 0.4px solid #000000;
-    display: flex;
-    justify-content: space-between;
-    text-align: justify;
-}
-
-.content-foto{
-
-}
-
-
-
-.content-principal{
-
-}
-
-.content-principal-text-title{
-    text-align: center;
-    overflow: hidden;
-
+/* .rodape-list-item{
+    list-style-image: url(./images/insta.png);
+    max-width: 500px;
 } */
+
+
