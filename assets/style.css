@@ -9,8 +9,8 @@
 
   body {
     font-size: 100%;
-    background: linear-gradient(68.15deg, #48484a 16.62%, #b7b8b9  85.61%);
-    color: white;
+    background: linear-gradient( to top right, #002855 16.62%,  #0466c8  85.61%);
+    color: #caf0f8;
     font-family: 'Roboto', sans-serif;
     /* background-size:cover; */
 }
@@ -31,7 +31,7 @@
     justify-content: space-around;
     padding: 24px;
     font-size: 20px;
-    border-bottom: 0.4px solid #d1d1d1;
+    border-bottom: 1.5px solid #caf0f8;
 }
 
 .head-menu{
@@ -39,10 +39,32 @@
     gap: 32px;
 }
 
-/*  NO MOMENTO TA FAZENDO NA DA MAS VOU MEXER AQUI PROVAVELMENTE
+.head-menu-button{
+    font-size: 100%;
+    font-family:'Roboto', sans-serif;
+    border: none;
+    border-radius: 16px;
+    height: 40px;
+    padding: 10px;
+    color:#caf0f8;
+    background-color: #0a81d6;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-delay: 50ms;
+    transition-timing-function:ease-in;
+}
+
+.head-menu-button:hover{
+    background-color: #06d1fa;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+}
+
+
 .head-menu-item{
-    display: flex;
-} */
+    color: whitesmoke;
+}
 
 .head-menu-item:link{
     text-decoration: none;
@@ -78,7 +100,7 @@
 } */
 
 img{
-    width: 400px;
+    width: 420px;
 }
 
 .principal-text{
@@ -114,19 +136,18 @@ img{
     justify-content: center;
     padding-top: 24px;
     padding-bottom: 24px;
-    border-top: 0.4px solid #d1d1d1;
+    border-top: 1.5px solid #caf0f8;
  
 }
 
 .rodape-list{
     display: flex;
     list-style: none;
-    /* list-style-image: url(./images/insta1.png); */
 }
 
-/* .rodape-list-item{
-    list-style-image: url(./images/insta.png);
-    max-width: 500px;
-} */
+.rodape-list-item{
+    color: #caf0f8;
+
+}
 
 
