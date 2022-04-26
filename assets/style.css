@@ -9,7 +9,8 @@
 
   body {
     font-size: 100%;
-    background: linear-gradient( to bottom left, var(--ColorNumberOne) 16.62%,  var(--ColorNumberTwo)  85.61%);
+    /* background: linear-gradient( to bottom left, var(--ColorNumberOne) 16.62%,  var(--ColorNumberTwo)  85.61%); */
+    background-color: var(--ColorNumberOne);
     color: var(--ColorNumberThree);
     font-family: 'Roboto', sans-serif;
 }
@@ -25,23 +26,19 @@
                 /*---------COLORS OF THE PAGE---------*/
 
 :root{
-    --ColorNumberOne: #08B2F5;
-    --ColorNumberTwo: #0C58E5;
-    --ColorNumberThree:#F8F9FA;
-    --ColorNumberFour: #07C8F9;
-    --ColorNumberFive: #212529;
-    --ColorNumberSix: #F8F9FA;
-    --ColorNumberSeven: #0000ff;
+    --ColorNumberOne: #F5EFE8;
+    --ColorNumberTwo: #696663;
+    --ColorNumberThree:#383838;
+    --ColorNumberFour: #CBC5C0;
+    --ColorNumberFive: #999491;
 }
 
 .dark-theme{
-    --ColorNumberOne: #00288b;
+    --ColorNumberOne: #212529;
     --ColorNumberTwo: #000d2e;
     --ColorNumberThree:#F8F9FA;
-    --ColorNumberFour: #002788;
-    --ColorNumberFive: #171a1d;
-    --ColorNumberSix: #F8F9FA;
-    --ColorNumberSeven: #495057;
+    --ColorNumberFour: #6C757D;
+    --ColorNumberFive: #DEE2E6;
 }
 
 
@@ -70,7 +67,7 @@
     border-radius: 16px;
     height: 40px;
     padding: 10px;
-    background-color: var(--ColorNumberFive);    
+    background-color: var(--ColorNumberFour);    
     transition-property: all;
     transition-duration: 250ms;
     transition-delay: 50ms;
@@ -78,8 +75,8 @@
 }
 
 .head-menu-item:hover{
-    color: var(--ColorNumberSix) ;
-    background-color: var(--ColorNumberSeven);
+    color: var(--ColorNumberOne) ;
+    background-color: var(--ColorNumberFive);
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 25px;
@@ -110,9 +107,12 @@
     align-items: center;
 }
 
-
-img{
-    width: 420px;
+.principal-fotografia-foto{
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .principal-text{
@@ -174,7 +174,7 @@ img{
     border-radius: 20px;
     padding-left: 5px;
     padding-right: 5px; 
-    background-color: var(--ColorNumberFive);
+    background-color: var(--ColorNumberFour);
 
     transition-property: all;
     transition-duration: 250ms;
@@ -183,7 +183,7 @@ img{
 }
 
 .rodape-list-item:hover{
-    color: var(--ColorNumberThree);
-    background-color: var(--ColorNumberSeven);
+    color: var(--ColorNumberOne);
+    background-color: var(--ColorNumberFive);
     height: 30px;
 }
