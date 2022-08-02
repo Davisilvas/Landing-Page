@@ -7,183 +7,68 @@
     text-decoration: none;
 }
 
-  body {
-    font-size: 100%;
-    /* background: linear-gradient( to bottom left, var(--ColorNumberOne) 16.62%,  var(--ColorNumberTwo)  85.61%); */
-    background-color: var(--ColorNumberOne);
-    color: var(--ColorNumberThree);
-    font-family: 'Roboto', sans-serif;
-}
-
 .container{
-    display: flex;
-    flex-direction: column;
+    position: relative;
     height: 100vh;
     width: 100vw;
+
+    font-family: 'Roboto', sans-serif;
+    background-color: #e6e6e6;
 }
 
-
-                /*---------COLORS OF THE PAGE---------*/
-
-:root{
-    --ColorNumberOne: #F5EFE8;
-    --ColorNumberTwo: #696663;
-    --ColorNumberThree:#383838;
-    --ColorNumberFour: #CBC5C0;
-    --ColorNumberFive: #999491;
+img{
+    width: 35px;
 }
 
-.dark-theme{
-    --ColorNumberOne: #212529;
-    --ColorNumberTwo: #000d2e;
-    --ColorNumberThree:#F8F9FA;
-    --ColorNumberFour: #6C757D;
-    --ColorNumberFive: #DEE2E6;
-}
+/* ********** HEADER ********** */
 
-
-                /* --------INÍCIO HEADER--------  */
-
-  .head{
+header{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    padding: 24px;
-    font-size: 20px;
+    justify-content: space-between;
+    height: 10%;
+    padding: 5px;
+
+    background-color: #F54703;
+    color:#e6e6e6
 }
 
-.head-menu{
+.name{
+    flex-direction: column;
+}
+
+.header-name{
+font-size: 20px;
+}
+
+.header-desc{
     display: flex;
-    gap: 32px;
+    font-size: 14px;
 }
 
 
-.head-menu-item{
-    color: var(--ColorNumberThree);
-    font-size: 100%;
-    font-family:'Roboto', sans-serif;
-    border: none;
-    border-radius: 16px;
-    height: 40px;
-    padding: 10px;
-    background-color: var(--ColorNumberFour);    
-    transition-property: all;
-    transition-duration: 250ms;
-    transition-delay: 50ms;
-    transition-timing-function:ease-in;
+/* ********** SECTION TECNOLOGIAS ********** */
+
+.tecnologias{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 3.5px;
+    margin-top: 4rem;
 }
 
-.head-menu-item:hover{
-    color: var(--ColorNumberOne) ;
-    background-color: var(--ColorNumberFive);
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 25px;
+.tec{
+    display: flex;
+    justify-content: space-between;
+    gap: 5.5px;
 }
 
-#icon{
-    width: 30px;
-    cursor: pointer;
-}
-
-
-                /* --------INÍCIO MAIN--------*/
-
-
-.content{
-    margin-bottom: 48px;
+.spans{
     display: flex;
     flex-direction: column;
-    align-items: space-around;
-    justify-content: center;
-    height: 1000px;
-}
-                
-.principal{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    align-items: center;
-}
-
-.principal-fotografia-foto{
-    width: 550px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.principal-text{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    max-width: 900px;
-}
-
-.principal-text-title{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 65px;
-    font-weight: 400;
-}
-
-.principal-text-paragraph{
-    display: flex;
-    font-weight: 300;
-    font-size: 26px;
-}
-
-
-
-                /* --------INÍCIO FOOTER--------*/
-
-.rodape{
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
-
-}
-
-.rodape-list{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    list-style: none;
-    gap: 10px;
-}
-
-
-.rodape-list-item{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-around; 
-
-    color: var(--ColorNumberThree);
-    font-size: 100%; 
-
-    border: none;
-    border-radius: 20px;
-    padding-left: 5px;
-    padding-right: 5px; 
-    background-color: var(--ColorNumberFour);
-
-    transition-property: all;
-    transition-duration: 250ms;
-    transition-delay: 50ms;
-    transition-timing-function:ease-in-out ;
-}
-
-.rodape-list-item:hover{
-    color: var(--ColorNumberOne);
-    background-color: var(--ColorNumberFive);
-    height: 30px;
+    text-align: left;
+    margin-top: 7.5px;
 }
