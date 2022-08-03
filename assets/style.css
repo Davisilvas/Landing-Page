@@ -16,9 +16,6 @@
     background-color: #e6e6e6;
 }
 
-img{
-    width: 35px;
-}
 
 /* ********** HEADER ********** */
 
@@ -27,10 +24,14 @@ header{
     align-items: center;
     justify-content: space-between;
     height: 10%;
-    padding: 5px;
+    padding: 5px 20px;
 
     background-color: #F54703;
     color:#e6e6e6
+}
+
+header img{
+    width: 35px;
 }
 
 .name{
@@ -53,17 +54,22 @@ font-size: 20px;
     display: grid;
     grid-template-rows: auto auto auto auto;
     grid-template-columns: auto auto auto auto;
-    grid-column-gap: 3rem;
+    grid-column-gap: 4rem;
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 3.5px;
-    margin-top: 4rem;
+    margin-top: 3rem;
+}
+
+.tec-logo{
+    width: 40px;
 }
 
 .tec{
     display: flex;
     justify-content: space-between;
-    gap: 5.5px;
+    gap: 8.5px;
+    position: relative;
 }
 
 .spans{
@@ -71,4 +77,69 @@ font-size: 20px;
     flex-direction: column;
     text-align: left;
     margin-top: 7.5px;
+    position: relative;
+    top: 20%;
+}
+
+
+/* ********** SECTION PROJETOS ********** */
+
+.projetos{
+    max-width: 1000px;
+    max-height: 600px;
+    margin: 0 auto;
+    border: 0.5px solid #000;
+    border-radius: 3px;
+    position: relative;
+    top: 90px;
+}
+
+.head button{
+    display: flex;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0 7px;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    width: 100%;
+    height: 2.3rem;
+    background-color: #F54703;
+    color: #e6e6e6;
+}
+
+.project-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.project-image{
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+
+.project-desc-group{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#dots{
+    display: flex;
+    gap: 3.5px;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+#dots img{
+    width: 15px;
 }
