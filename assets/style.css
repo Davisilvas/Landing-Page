@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
 
 * {
     margin: 0;
@@ -25,7 +25,7 @@ header{
     justify-content: space-between;
     height: 10%;
     padding: 5px 20px;
-
+    border-bottom: 1px solid #000;
     background-color: #F54703;
     color:#e6e6e6
 }
@@ -58,7 +58,7 @@ font-size: 20px;
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 3.5px;
-    margin-top: 3rem;
+    margin-top: 1em;
 }
 
 .tec-logo{
@@ -79,6 +79,16 @@ font-size: 20px;
     margin-top: 7.5px;
     position: relative;
     top: 20%;
+}
+
+.tec-name{
+    font-weight: 500;
+    color: #F54703;
+    letter-spacing: 2px;
+}
+
+.tec-desc{
+    font-weight: 300;
 }
 
 
@@ -131,6 +141,11 @@ font-size: 20px;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-end;
+    font-weight: 300;
+}
+
+.project-desc{
+    font-weight: 500;
 }
 
 #dots{
@@ -142,4 +157,34 @@ font-size: 20px;
 
 #dots img{
     width: 15px;
+}
+
+
+/* ********** FOOTER ********** */
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+    height: 7%;
+    background-color: #F54703;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #000;
+}
+
+.footer-nav{
+    margin-top: 15px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+.footer-nav a{
+    list-style: none;
+    color: #e6e6e6;
+}
+
+.footer-nav a:nth-of-type(2){
+    margin-left: 9.5%;
 }
