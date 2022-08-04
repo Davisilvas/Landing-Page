@@ -11,7 +11,6 @@
     position: relative;
     height: 100vh;
     width: 100vw;
-
     font-family: 'Roboto', sans-serif;
     background-color: #e6e6e6;
 }
@@ -96,12 +95,14 @@ font-size: 20px;
 
 .projetos{
     max-width: 1000px;
-    max-height: 600px;
+    height: 400px;
     margin: 0 auto;
     border: 0.5px solid #000;
     border-radius: 3px;
     position: relative;
     top: 90px;
+    overflow:hidden;
+
 }
 
 .head button{
@@ -117,48 +118,69 @@ font-size: 20px;
     justify-content: space-between;
     padding: 5px 20px;
     width: 100%;
-    height: 2.3rem;
+    height: 10%;
     background-color: #F54703;
     color: #e6e6e6;
 }
 
 .project-container{
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-}
-
-.project-image{
+    height: 80%;
     width: 100%;
-    border: 1px solid #000;
-    border-radius: 3px;
-}
-
-
-.project-desc-group{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    font-weight: 300;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
 }
 
-.project-desc{
-    font-weight: 500;
-}
-
-#dots{
+.navigation{
+    position: absolute;
+    bottom: 20px;
     display: flex;
-    gap: 3.5px;
-    justify-content: center;
-    padding: 5px 0;
 }
 
-#dots img{
-    width: 15px;
+.navigation label{
+    width: 50px;
+    height: 17px;
+    border: 2px solid #000;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
+.navigation label:hover{
+    background-color: #F54703;
+}
+
+.slides{
+    display: flex;
+    width: 300%;
+    height: 100%;
+}
+
+.slide{
+    width: 33.3%;
+    transition: 0.5s;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -33.3%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -66.6%;
+}
+
+.slides img{
+    height: 360px;
+}
+
+.slides input{
+    display: none;
+}
 
 /* ********** FOOTER ********** */
 

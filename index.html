@@ -97,49 +97,38 @@
                 <!-- In this section I'll show my projects and put links that lead to them! -->
                 <div class="head">
                     <span>Meus Projetos</span>
-                    <nav>
+                    <!-- <nav>
                         <button>
                             <img src="/assets/icons/downCircle.svg" alt="down-arrow">
                             <span>All</span>
                         </button>
-                    </nav>
+                    </nav> -->
                 </div>
-
                 <div class="project-container">
-                    <div class="project" id="p1">
-                        <img class="project-image" src="./assets/images/projetoPokedex.png" alt="Imagem do projeto pokedéx">
-                    
-                        <div class="project-desc-group">
-                            <span class="project-desc">projeto JavaScript consumindo uma API</span>
-                            <span class="project-link">#</span>
-                            <a class="git-link">https://github.com/Davisilvas/pokedex</span>
+                    <div class="slides">
+                        <input type="radio" name="slide" id="slide1" checked>
+                        <input type="radio" name="slide" id="slide2">
+                        <input type="radio" name="slide" id="slide3">
+                        <!-- <input type="radio" name="radio" id="radio4">
+                        <input type="radio" name="radio" id="radio5"> -->
+                        
+                        <!-- s1 = slide 1 -->
+                        <div class="slide s1">
+                            <img src="./assets/images/projetoPokedex.png" alt="Projeto Pokedex">
                         </div>
-                    </div>
+                        <div class="slide">
+                            <img src="./assets/images/blogCodar.png" alt="Blog Codar">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/images/agenda.png" alt="Projeto Agenda">
+                        </div>
 
-                    <div class="project" id="p2">
-                        <img class="project-image" src="./assets/images/projetoPokedex.png" alt="Imagem do projeto pokedéx">
-                    
-                        <div class="project-desc-group">
-                            <span class="project-desc">projeto JavaScript consumindo uma API</span>
-                            <span class="project-link">#</span>
-                            <a class="git-link">https://github.com/Davisilvas/pokedex</span>
-                        </div>
                     </div>
-    
-                    <div class="project" id="p3">
-                        <img class="project-image" src="./assets/images/projetoPokedex.png" alt="Imagem do projeto pokedéx">
-                    
-                        <div class="project-desc-group">
-                            <span class="project-desc">projeto JavaScript consumindo uma API</span>
-                            <span class="project-link">#</span>
-                            <span class="git-link">https://github.com/Davisilvas/pokedex</span>
-                        </div>
+                    <div class="navigation">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
                     </div>
-                </div>
-
-                <div id="dots">
-                    <img src="./assets/icons/preenchido.svg">
-                    <img src="./assets/icons/vazio.svg">
                 </div>
             </section>
         </main>
@@ -154,7 +143,7 @@
         </footer>
     </div>       
 
-<script src="./scripts/script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
 
