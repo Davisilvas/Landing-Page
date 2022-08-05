@@ -94,15 +94,13 @@ font-size: 20px;
 /* ********** SECTION PROJETOS ********** */
 
 .projetos{
-    max-width: 1000px;
+    max-width: 900px;
     height: 400px;
     margin: 0 auto;
     border: 0.5px solid #000;
     border-radius: 3px;
     position: relative;
-    top: 90px;
-    overflow:hidden;
-
+    top: 55px;
 }
 
 .head button{
@@ -122,18 +120,57 @@ font-size: 20px;
     background-color: #F54703;
     color: #e6e6e6;
 }
+/* IMAGENS DO CARROSSEL  */
 
 .project-container{
-    height: 80%;
-    width: 100%;
+    height: 60%;
+    width: 75%;
+    margin: 35px auto;
+    overflow:hidden;
     display: flex;
     transition: transform 0.5s ease-in-out;
     transform: translateX(0);
 }
 
+.slides{
+    display: flex;
+}
+
+.slide{
+    width: 35%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.slide img{
+    border-radius: 6px;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -35%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -70%;
+}
+
+.slides img{
+    height: 360px;
+}
+
+.slides input{
+    display: none;
+}
+
+/* NAVEGAÇÂO DO CARROSEL */
 .navigation{
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
+    left: 250px;
     display: flex;
 }
 
@@ -151,36 +188,29 @@ font-size: 20px;
     background-color: #F54703;
 }
 
-.slides{
+/* DESCRIÇÃO DO PROJETO */
+.links-container{
+    position: relative;
+    bottom: 20px;
     display: flex;
-    width: 300%;
-    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+    font-size: 14px;
 }
 
-.slide{
-    width: 33.3%;
-    transition: 0.5s;
+#project-desc{
+    color: #F54703;
+    font-weight: 500;
 }
 
-#slide1:checked ~ .s1{
-    margin-left: 0;
+#project-link, #git-link{
+    text-decoration: none;
+    margin-top: 3.5px;
+    color: #000;
+    font-weight: 300;
 }
 
-#slide2:checked ~ .s1{
-    margin-left: -33.3%;
-}
-
-#slide3:checked ~ .s1{
-    margin-left: -66.6%;
-}
-
-.slides img{
-    height: 360px;
-}
-
-.slides input{
-    display: none;
-}
 
 /* ********** FOOTER ********** */
 
@@ -196,10 +226,12 @@ footer{
 }
 
 .footer-nav{
-    margin-top: 15px;
+    margin-top: 5px;
     display: flex;
+    gap: 5.5px;
     align-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .footer-nav a{
@@ -207,6 +239,6 @@ footer{
     color: #e6e6e6;
 }
 
-.footer-nav a:nth-of-type(2){
+/* .footer-nav a:nth-of-type(2){
     margin-left: 9.5%;
-}
+} */

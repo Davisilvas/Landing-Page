@@ -8,9 +8,7 @@
     <link href="./assets/style.css" rel="stylesheet">
     <title>Davi Santos</title>
 </head>
-<body>
-    
-
+<body onload="turnDisplayOff(onload)">
     <div class="container">
         <header>
             <div class="name">
@@ -106,23 +104,22 @@
                 </div>
                 <div class="project-container">
                     <div class="slides">
-                        <input type="radio" name="slide" id="slide1" checked>
-                        <input type="radio" name="slide" id="slide2">
-                        <input type="radio" name="slide" id="slide3">
+                        <input type="radio" name="slide" id="slide1" checked onclick="setValues(onclick)">
+                        <input type="radio" name="slide" id="slide2" onclick="setValues2(onclick)">
+                        <input type="radio" name="slide" id="slide3" onclick="setValues3(onclick)">
                         <!-- <input type="radio" name="radio" id="radio4">
                         <input type="radio" name="radio" id="radio5"> -->
                         
                         <!-- s1 = slide 1 -->
-                        <div class="slide s1">
+                        <div class="slide s1" id="img1">
                             <img src="./assets/images/projetoPokedex.png" alt="Projeto Pokedex">
                         </div>
-                        <div class="slide">
+                        <div class="slide" id="img2">
                             <img src="./assets/images/blogCodar.png" alt="Blog Codar">
                         </div>
-                        <div class="slide">
+                        <div class="slide" id="img3">
                             <img src="./assets/images/agenda.png" alt="Projeto Agenda">
                         </div>
-
                     </div>
                     <div class="navigation">
                         <label for="slide1"></label>
@@ -130,15 +127,20 @@
                         <label for="slide3"></label>
                     </div>
                 </div>
+                <div class="links-container">
+                    <span id="project-desc">Projeto Javascript consumindo uma API</span>
+                    <a href="#" id="project-link" target="_blank">Link do projeto Pokedex na web</a>
+                    <a href="https://github.com/Davisilvas/pokedex" id="git-link" target="_blank">Link do projeto Pokedex no Github</a>
+                </div>
             </section>
         </main>
 
         <footer>
             <nav class="footer-nav">
                 <a href="https://web.whatsapp.com/send?phone=5524993287911" target="_blank" class="rodape-list-item">
-                    (24) 99328-7911
+                    Whatsapp: (24) 99328-7911 |
                 </a>
-                <a class="head-menu-item" href="./assets/curriculum/Davi_Silva_Santos.zip" download="Davi_Silva_Santos.zip" type="application/pdf">Download - Currículo</a>
+                <a class="head-menu-item" href="./assets/curriculum/Davi_Silva_Santos.zip" download="Davi_Silva_Santos.zip" type="application/pdf">Download Currículo</a>
             </nav>
         </footer>
     </div>       
