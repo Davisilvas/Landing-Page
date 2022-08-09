@@ -29,10 +29,34 @@ header{
     color:#e6e6e6
 }
 
-header img{
+/* NAVIGATION  */
+header nav{
+    display: flex;
+    flex-direction: column;
+}
+
+header nav img{
     width: 35px;
 }
 
+/* MENU */
+.header-links ul li{    
+    list-style: none;
+    display: inline;
+    position: relative;
+}
+
+.header-links a{
+    color: #e6e6e6;
+    text-decoration: none;
+}
+
+.header-links a:hover{
+    text-decoration: underline;
+}
+
+
+/* DESCRIPTION */
 .name{
     flex-direction: column;
 }
@@ -130,6 +154,7 @@ font-size: 20px;
     display: flex;
     transition: transform 0.5s ease-in-out;
     transform: translateX(0);
+    border-radius: 7.5px;
 }
 
 .slides{
@@ -140,10 +165,6 @@ font-size: 20px;
     width: 35%;
     height: 100%;
     transition: 0.5s;
-}
-
-.slide img{
-    border-radius: 6px;
 }
 
 #slide1:checked ~ .s1{
@@ -211,6 +232,90 @@ font-size: 20px;
     font-weight: 300;
 }
 
+/* ********** PÁGINA DO CURRÍCULO ********** */
+
+.curriculum-main{
+    max-width: 1220px;
+    margin: 0 auto;
+    margin-top: 25px;
+    position: relative;
+}
+
+.name-addres{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.name-addres h1{
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.name-addres div{
+    margin-top: 5px;
+}
+
+.name-addres div span{
+    display: block;
+    align-self: flex-end;
+}
+
+.skills{
+    max-width: 550px;
+    margin-top: 10px;
+}
+
+.skills h2{
+    font-weight: 500;
+}
+
+.skills p{
+    margin-bottom: 3.5px;
+}
+
+.skills li{
+    list-style: none;
+    margin-bottom: 1.5px;
+}
+
+.education{
+    margin-top: 10px;
+}
+
+.education h2{
+    font-weight: 500;
+}
+
+.education div{
+    margin-bottom: 7px;
+}
+
+.downloads{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 15%;
+    left: 55.5%;
+}
+
+.downloads a{
+    padding: 8px;
+    text-decoration: none;
+    list-style: none;
+    background-color: #F54703;
+    border-radius: 5px;
+    color: #e6e6e6;
+}
+
+/* .downloads a:hover{
+
+
+     display: inline-block;
+} */
 
 /* ********** FOOTER ********** */
 
@@ -237,6 +342,10 @@ footer{
 .footer-nav a{
     list-style: none;
     color: #e6e6e6;
+}
+
+.rodape-list-item:hover{
+    text-decoration: underline;
 }
 
 /* .footer-nav a:nth-of-type(2){
