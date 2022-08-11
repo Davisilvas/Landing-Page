@@ -29,13 +29,6 @@ const Data = [
     ]
 ]
 
-function turnDisplayOff(event){
-    if(event){
-        img2.display = "none";
-        img3.display = "none";
-    }
-}
-
 function setValues(event){
 
     if(event){
@@ -55,8 +48,6 @@ function setValues2(event){
         git.href = Data[1][0];
         git.innerHTML = Data[1][1];
         desc.innerHTML = Data[1][4];
-        img3.display = "none";
-        img1.display = "none"
     }
 }
 
@@ -68,51 +59,5 @@ function setValues3(event){
         git.href = Data[2][0];
         git.innerHTML = Data[2][1];
         desc.innerHTML = Data[2][4];
-        img1.display = "none";
-        img2.display = "none";
     }
 }
-
-class MobileBar{
-    constructor(mobileMenu, navList, navLinks){
-        this.mobileMenu = document.querySelector(mobileMenu);
-        this.navList = document.querySelector(navList);
-        this.navLinks = document.querySelectorAll(navLinks);
-        this.activeClass = "active";
-        this.handleClick = this.handleClick.bind(this);
-    }
-
-    animatedLinks(){
-        this.navLinks.forEach((link, index) => {
-            link.style.animation
-            ? (link.style.animation ="")
-            : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-                index / 7 + 0.3
-            }s`);
-        });
-    }
-
-    handleClick(){
-        this.navList.classList.toggle(this.activeClass);
-        this.navList.mobileMenu.toggle(this.activeClass);
-        this.animatedLinks();
-    }
-
-    addClickEvent() {
-        this.mobileMenu.addEventListener("click", this.handleClick);
-    }
-    
-      init() {
-        if (this.mobileMenu) {
-          this.addClickEvent();
-        }
-        return this;
-    }   
-}
-
-const mobileNavbar = new MobileNavbar(
-    ".mobile-menu",
-    ".nav-list",
-    ".nav-list li",
-  );
-  mobileNavbar.init();
