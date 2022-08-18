@@ -18,10 +18,22 @@
 }
 
 main{
-    overflow: scroll;
     height: 92vh;
 }
 
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #F54703;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #000;
+    border-radius: 5px;
+}
 
 /* ********** HEADER ********** */
 
@@ -29,7 +41,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 10%;
+    height: 7.35vh;
     padding: 5px 20px;
     border-bottom: 1px solid #000;
     background-color: #F54703;
@@ -264,97 +276,14 @@ font-size: 20px;
     font-weight: 300;
 }
 
-/* ********** PÁGINA DO CURRÍCULO ********** */
-
-.curriculum-main{
-    max-width: 1220px;
-    margin: 0 auto;
-    margin-top: 25px;
-    position: relative;
-}
-
-.name-addres{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.name-addres h1{
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: #000;
-}
-
-.name-addres div{
-    margin-top: 5px;
-}
-
-.name-addres div span{
-    display: block;
-    align-self: flex-end;
-}
-
-.skills{
-    max-width: 550px;
-    margin-top: 10px;
-}
-
-.skills h2{
-    font-weight: 500;
-}
-
-.skills p{
-    margin-bottom: 3.5px;
-}
-
-.skills li{
-    list-style: none;
-    margin-bottom: 1.5px;
-}
-
-.education{
-    margin-top: 10px;
-}
-
-.education h2{
-    font-weight: 500;
-}
-
-.education div{
-    margin-bottom: 7px;
-}
-
-.downloads{
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    gap: 5px;
-    position: absolute;
-    top: 15%;
-    left: 55.5%;
-}
-
-.downloads a{
-    padding: 8px;
-    text-decoration: none;
-    list-style: none;
-    background-color: #F54703;
-    border-radius: 5px;
-    color: #e6e6e6;
-}
-
-/* .downloads a:hover{
-
-
-     display: inline-block;
-} */
 
 /* ********** FOOTER ********** */
 
 footer{
     position: absolute;
+    align-self: flex-end;
     flex-shrink: 0;
-    bottom: 0;
+    bottom: -5.9px;
     width: 100vw;
     height: 8vh;
     background-color: #F54703;
@@ -372,30 +301,48 @@ footer{
     flex-wrap: wrap;
 }
 
-.footer-nav a{
+.footer-nav ul{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-nav ul li{
     list-style: none;
     color: #e6e6e6;
 }
 
-.rodape-list-item:hover{
+.footer-nav ul li a{
+    color: #e6e6e6;
+}
+
+.footer-nav ul li a:hover{
     text-decoration: underline;
 }
 
 @media (max-width:1100px){
 
-    .container{
-        gap: 10px;
+    body{
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
-    main{
-        overflow: scroll;
+    .container{
+        /* gap: 10px; */
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
+
+    /* main{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    } */
 
     /* SECTION TECNOLOGIAS */
     .tecnologias{
         max-width:850px;
-        max-height: 950px;
-        /* height: 50%; */
+        height: 275px;
+        overflow-y: scroll;
+        overflow-x: hidden;
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto auto;
@@ -437,11 +384,18 @@ footer{
     
 /* FOOTER */
     footer{
-        height: 4%;
-        position:sticky;
+        position: relative;
+        height: 100px;
+    }
+
+    .verticalBar{
+        display: none;
+    }
+
+    .footer-nav ul{
+        gap: 20px;
     }
 }
-
 
 @media (max-width:650px){
 
@@ -463,6 +417,10 @@ footer{
     }
     
     .tecnologias{
+        height: 350px;
+        width: 80%;
+        overflow-x: hidden;
+        overflow-y: scroll;
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto auto auto auto;
     }
@@ -490,11 +448,26 @@ footer{
         width: 30px;
         height: 12px;
     }
+
+    footer{
+        position: relative;
+        height: 150px;
+    }
+
+    .footer-nav ul{
+        flex-direction: column;
+    }
 }
 
 @media(max-width: 440px){
     
+    .tecnologias{
+        height: 250px;
+    }
+    
     .projetos{
+        position: relative;
+        top: 100px;
         max-width:90%;
     }
     
