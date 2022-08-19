@@ -26,13 +26,21 @@ main{
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: #F54703;
+    background-color: #f54803b2;
     border-radius: 5px;
 }
 
+::-webkit-scrollbar-thumb:hover{
+    background-color: #F54703;
+}
+
 ::-webkit-scrollbar-track{
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.678);
     border-radius: 5px;
+}
+
+::-webkit-scrollbar-track:hover{
+    background-color: #000;
 }
 
 /* ********** HEADER ********** */
@@ -481,6 +489,11 @@ footer{
         height: 180px;
     }
 
+
+    .navigation{
+        bottom: 29px;
+        left: 29.5%;
+    }
     #project-desc{
         margin-left: 10px;
     }
