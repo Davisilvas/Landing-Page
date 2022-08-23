@@ -331,6 +331,47 @@ footer{
     text-decoration: underline;
 }
 
+/* ********** PAGES ********** */
+
+.pagesSection{
+display: flex;
+flex-direction: column;
+gap: 10px;
+width: 500px;
+margin: 0 auto;
+margin-top: 18px;
+}
+
+.spanOne{
+    align-self: center;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+}
+
+.spanTwo{
+    font-size: 20px;
+}
+
+.pagesSection a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+.pagesSection a:hover{
+    text-decoration: underline;
+}
+
+.video video{
+    border-radius: 10px;
+    max-width: 50%;
+    position: relative;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+
 @media (max-width:1100px){
 
     body{
@@ -344,10 +385,6 @@ footer{
         overflow-x: hidden;
     }
 
-    /* main{
-        overflow-y: scroll;
-        overflow-x: hidden;
-    } */
 
     /* SECTION TECNOLOGIAS */
     .tecnologias{
@@ -406,6 +443,27 @@ footer{
 
     .footer-nav ul{
         gap: 20px;
+    }
+
+/* PAGES */
+    .pagesSection{
+        margin-top: 90px;
+    }
+
+    .video video{
+        max-width: 70%;
+    }
+
+}
+
+@media (max-width:850px){
+
+    .pagesSection{
+        margin-top: 120px;
+    }
+
+    .video video{
+        max-width: 80%;
     }
 }
 
@@ -471,6 +529,19 @@ footer{
     }
 }
 
+@media(max-width: 550px){
+    .pagesSection{
+        max-width: 370px;
+    }
+}
+
+@media(max-width: 490px){
+    
+    .video video{
+        max-width: 90%;
+    }
+}
+
 @media(max-width: 440px){
     
     .tecnologias{
@@ -501,5 +572,14 @@ footer{
     #project-desc{
         margin-left: 10px;
     }
-    
+}
+
+@media(max-width: 360px){
+    .pagesSection{
+        max-width: 90%;
+    }
+
+    .spanOne{
+        font-size: 35px;
+    }
 }

@@ -18,21 +18,21 @@ const Data = [
     [
         "https://github.com/Davisilvas/blog-php",
         "Link do Projeto Blog em PHP no Github",
-        "#",
+        "./pages/redirectOne.html",
         "Link do Projeto Blog em PHP na web",
         "Projeto em php com páginas dinâmicas usando dados mockados"
     ],
     [
         "https://github.com/Davisilvas/projetoAgenda",
         "Link do projeto Agenda no Github",
-        "#",
+        "./pages/redirectTwo.html",
         "Link do projeto Agenda na web",
         "Projeto Agenda usando MySql e PHP"
     ],
     [
         "https://github.com/Davisilvas/financial_control",
         "Link do projeto Financial control no Github",
-        "#",
+        "./pages/redirectThree.html",
         "Link do projeto Financial Control na web",
         "Projeto Financial Control desenvolvido em React.Js"
     ]
