@@ -49,12 +49,6 @@ function setValues(event){
     }
 }
 
-// function warningAlert(event){
-//     if(link.href = "#"){
-//         alert("O projeto ainda não se encontra no ar. Mas enquanto isso você pode dar uma olhada no código dele :)")
-//     }
-// }
-
 function setValues2(event){
 
     if(event){
