@@ -231,6 +231,10 @@ font-size: 20px;
     margin-left: -70%;
 }
 
+#slide4:checked ~ .s1{
+    margin-left: -105%;
+}
+
 .slides img{
     height: 360px;
 }

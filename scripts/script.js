@@ -4,12 +4,14 @@ let desc = document.querySelector("#project-desc")
 let img1 = document.querySelector("#img1");
 let img2 = document.querySelector("#img2");
 let img3 = document.querySelector("#img3");
+let img4 = document.querySelector("#img4");
+
 
 const Data = [
     [
         "https://github.com/Davisilvas/pokedex",
         "Link do projeto Pokedex no Github",
-        "#",
+        "https://davisilvas.github.io/pokedex/",
         "Link do projeto Pokedex na web",
         "Projeto Javascript consumindo uma API"
     ],
@@ -26,6 +28,13 @@ const Data = [
         "#",
         "Link do projeto Agenda na web",
         "Projeto Agenda usando MySql e PHP"
+    ],
+    [
+        "https://github.com/Davisilvas/financial_control",
+        "Link do projeto Financial control no Github",
+        "#",
+        "Link do projeto Financial Control na web",
+        "Projeto Financial Control desenvolvido em React.Js"
     ]
 ]
 
@@ -40,11 +49,11 @@ function setValues(event){
     }
 }
 
-function warningAlert(event){
-    if(link.href = "#"){
-        alert("O projeto ainda não se encontra no ar. Mas enquanto isso você pode dar uma olhada no código dele :)")
-    }
-}
+// function warningAlert(event){
+//     if(link.href = "#"){
+//         alert("O projeto ainda não se encontra no ar. Mas enquanto isso você pode dar uma olhada no código dele :)")
+//     }
+// }
 
 function setValues2(event){
 
@@ -65,5 +74,16 @@ function setValues3(event){
         git.href = Data[2][0];
         git.innerHTML = Data[2][1];
         desc.innerHTML = Data[2][4];
+    }
+}
+
+function setValues4(event){
+
+    if(event){
+        link.href = Data[3][2];
+        link.innerHTML = Data[3][3];
+        git.href = Data[3][0];
+        git.innerHTML = Data[3][1];
+        desc.innerHTML = Data[3][4];
     }
 }
