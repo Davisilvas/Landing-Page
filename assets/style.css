@@ -562,6 +562,12 @@ margin-top: 18px;
         top: 50px;
         max-width:90%;
     }
+
+    .head span{
+        position: relative;
+        top: 4px;
+        left: -10px;
+    }
     
     .project-container{
         max-width: 90%;
@@ -580,6 +586,10 @@ margin-top: 18px;
     }
     #project-desc{
         margin-left: 10px;
+    }
+
+    footer{
+        height: 130px;
     }
 }
 
