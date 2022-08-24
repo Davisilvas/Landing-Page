@@ -9,7 +9,6 @@
 
 .container{
     position: relative;
-    /* height: 100vh; */
     width: 100vw;
     font-family: 'Roboto', sans-serif;
     background-color: #e6e6e6;
@@ -124,6 +123,12 @@ font-size: 20px;
 
 
 /* ********** SECTION TECNOLOGIAS ********** */
+
+.minhasHabilidades{
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
 
 .tecnologias{
     display: grid;
@@ -544,6 +549,10 @@ margin-top: 18px;
 
 @media(max-width: 440px){
     
+    .minhasHabilidades{
+        margin-left: 15%;
+    }
+    
     .tecnologias{
         height: 250px;
     }
@@ -567,7 +576,7 @@ margin-top: 18px;
 
     .navigation{
         bottom: 29px;
-        left: 29.5%;
+        left: 19%;
     }
     #project-desc{
         margin-left: 10px;
