@@ -367,13 +367,35 @@ margin-top: 18px;
     text-decoration: underline;
 }
 
-.video video{
-    border-radius: 10px;
+.video{
     max-width: 50%;
     position: relative;
     top: 30px;
     left: 50%;
     transform: translate(-50%,0);
+}
+
+.video video{
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.controle{
+    height: 100%;
+    width: 100%;
+    /* background-color: #F54703; */
+    text-align: center;
+    position: absolute;
+    top: 0;
+}
+
+.btn{
+    position: relative;
+    top: 100%;
+    transform: translateY(-190%);
+    width: 25px;
+    background-color: #e6e6e6;
 }
 
 
