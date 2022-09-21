@@ -14,145 +14,139 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="name">
-                <span class="header-name">Davi Santos</span>
-                <span class="header-desc">Fullstack Web Developer</span>
-            </div>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <nav>
-                <div class="header-imgs">
-                    <ul class="nav-list">
-                        <li>
-                            <a href="https://github.com/Davisilvas" target="_blank">
-                                <img src="./assets/icons/github.svg" alt="Github">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/davisilvasantoss/" target="_blank">
-                                <img src="./assets/icons/linkedin.svg" alt="LinkedIn">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/davi120_/" target="_blank">
-                                <img src="./assets/icons/instagram.svg" alt="Instagram">
-                            </a>
-                        </li>
-                        <li>    
-                            <a href="https://www.facebook.com/davi.santos.509" target="_blank">
-                                <img src="./assets/icons/facebook.svg" alt="Facebook">
-                            </a>
-                        </li>
-                    </ul>
+        <section class="bg">
+            <header>
+                <p>Davi Santos</p>
+                <nav>
+                 <ul>
+                     <li><a href="#abilities">Habilidades</a></li>
+                     <li><a href="#projects">Projetos</a></li>
+                     <li><a href="">Sobre</a></li>
+                     <li><a href="">Contato</a></li>
+                 </ul>
+                </nav>
+             </header>
+             <section id="presentation">
+                <div class="group">
+                    <div class="div-description">
+                        <h1>Olá! Eu sou um dev FullStack!</h1>
+                        <p>Eu sou um desenvolvedor focado na web. Por isso eu tenho conhecimento nas tecnologias da área e vontade aprender ainda mais sobre todo esse mundo!</p>
+                    </div>
+                    <img src="./assets/images/photoOfMe.jpeg" alt="Uma foto minha com roupas pretas e um céu azul de fundo.">
                 </div>
-            </nav>
-        </header>
-        <main>
-            <h1 class="minhasHabilidades">
-                Minhas Habilidades
-            </h1>
-            <section class="tecnologias">
-            <!-- In this section I'll describe the tecnologies that I know right now -->
 
-                <div class="tec" id="tec1">
-                    <img class="tec-logo" src="./assets/icons/tecIcons/html.svg" alt="HTML logo">
-                    <div class="spans">
-                        <span class="tec-name">HTML</span>
-                        <span class="tec-desc">É a linguagem de marcação usada para dar estrutura ao site.</span>
+                <nav class="social-media">
+                    <ul>
+                        <li><a href="https://github.com/Davisilvas"><img src="./assets/icons/github.svg" alt="github-icon"></a></li>
+                        <li><a href="https://www.linkedin.com/in/davisilvasantoss/"><img src="./assets/icons/linkedin.svg" alt="linkedIn-icon"></a></li>
+                        <li><a href="https://www.instagram.com/davi120_/"><img src="./assets/icons/instagram.svg" alt="instagram-icon"></a></li>
+                        <li><a href="https://twitter.com/davi__ssd"><img src="./assets/icons/twitter.svg" alt="twitter-icon"></a></li>
+                        <li><a href="https://www.facebook.com/davi.santos.509"><img src="./assets/icons/facebook.svg" alt="facebook-icon"></a></li>
+                    </ul>
+                </nav>
+            </section>
+        </section>
+
+        <main>
+
+            <section id="abilities">
+                <div class="tec html">
+                    <img src="./assets/icons/tecIcons/html.svg" alt="html-icon">
+                    <div>
+                        <p class="tec-name">HTML</p>
+                        <p class="tec-desc">É a linguagem de marcação usada para dar estrutura ao site.</p>
                     </div>
                 </div>
-                <div class="tec" id="tec2">
-                    <img class="tec-logo" src="./assets/icons/tecIcons/css.svg" alt="CSS logo">
-                    <div class="spans">
-                        <span class="tec-name">CSS</span>
-                        <span class="tec-desc">É a linguagem de estilização responsável por dar estilo ao HTML.</span>
+
+                <div class="tec css">
+                    <img src="./assets/icons/tecIcons/css.svg" alt="css-icon">
+                    <div>
+                        <p class="tec-name">CSS</p>
+                        <p class="tec-desc">É a linguagem de estilização responsável por dar estilo ao HTML.</p>
                     </div>
                 </div>
-                <div class="tec" id="tec3">
-                    <img class="tec-logo" src="./assets/icons/tecIcons/javascript.svg" alt="javascript logo">
-                    <div class="spans">
-                        <span class="tec-name">Javascript</span>
-                        <span class="tec-desc">Linguagem de programação usada tanto no front quanto no back, famosa por proporcionar interação entre o sistema e o usuário.</span>
+
+                <div class="tec javascript">
+                    <img src="./assets/icons/tecIcons/javascript.svg" alt="javascript-icon">
+                    <div>
+                        <p class="tec-name">Javascript</p>
+                        <p class="tec-desc">Linguagem de programação usada tanto no front quanto no back, famosa por proporcionar interação entre o sistema e o usuário.
+                        </p>
                     </div>
                 </div>
-                <div class="tec" id="tec4">
-                    <img class="tec-logo" src="./assets/icons/tecIcons/nodeJs.svg" alt="Node.Js logo">
-                    <div class="spans">
-                        <span class="tec-name">Node.Js</span>
-                        <span class="tec-desc">Ambiente para execução de código javascript que é usado para rodar no server side, sendo assim o Js no backend.</span>
+
+                <div class="tec nodeJs">
+                    <img src="./assets/icons/tecIcons/nodeJs.svg" alt="nodeJs-icon">
+                    <div>
+                        <p class="tec-name">Node.Js</p>
+                        <p class="tec-desc">Ambiente para execução de código javascript que é usado para rodar no server side, sendo assim o Js no backend.</p>
                     </div>
                 </div>
-                    <div class="tec" id="tec5">
-                        <img class="tec-logo" src="./assets/icons/tecIcons/react.svg" alt="React logo">
-                        <div class="spans">
-                            <span class="tec-name">React Js</span>
-                            <span class="tec-desc">Biblioteca javascript para criação de interfaces de usuário.</span>
-                        </div>
+
+                <div class="tec reactJs">
+                    <img src="./assets/icons/tecIcons/react.svg" alt="reactJs-icon">
+                    <div>
+                        <p class="tec-name">React Js</p>
+                        <p class="tec-desc">Biblioteca javascript para criação de interfaces de usuário.</p>
                     </div>
-                    <div class="tec" id="tec6">
-                        <img class="tec-logo" src="./assets/icons/tecIcons/php.svg" alt="PHP Logo">
-                        <div class="spans">
-                            <span class="tec-name">PHP</span>
-                            <span class="tec-desc">Linguagem de programação server side, capaz de fazer as interações entre cliente, servidor e banco de dados.</span>
-                        </div>
+                </div>
+
+                <div class="tec php">
+                    <img src="./assets/icons/tecIcons/php.svg" alt="php-icon">
+                    <div>
+                        <p class="tec-name">PHP</p>
+                        <p class="tec-desc">Linguagem de programação server side, capaz de fazer as interações entre cliente, servidor e banco de dados.</p>
                     </div>
-                    <div class="tec" id="tec7">
-                        <img class="tec-logo" src="./assets/icons/tecIcons/database.svg" alt="Database Symbol">
-                        <div class="spans">
-                            <span class="tec-name">MySql</span>
-                            <span class="tec-desc">Sistema de gerenciamento de banco de dados relacional.</span>
-                        </div>
+                </div>
+
+                <div class="tec mysql">
+                    <img src="./assets/icons/tecIcons/database.svg" alt="database-icon">
+                    <div>
+                        <p class="tec-name">MySql</p>
+                        <p class="tec-desc">Sistema de gerenciamento de banco de dados relacional..</p>
                     </div>
-                    <div class="tec" id="tec8">
-                        <img class="tec-logo" src="./assets/icons/tecIcons/git.svg" alt="Git Icon">
-                        <div class="spans">
-                            <span class="tec-name">Git</span>
-                            <span class="tec-desc">Sistema de controle de versão de códigos.</span>
+                </div>
+
+                <div class="tec git">
+                    <img src="./assets/icons/tecIcons/git.svg" alt="git-icon">
+                    <div>
+                        <p class="tec-name">Git</p>
+                        <p class="tec-desc">Sistema de controle de versão de códigos.</p>
+                    </div>
+                </div>
+                <div class="tec python">
+                    <img src="./assets/icons/tecIcons/python.svg" alt="python-logo">
+                    <div>
+                        <p class="tec-name">Python</p>
+                        <p class="tec-desc">Linguagem de programação orientada a objetos que ajuda em data science, machine learning, automação de scripts e mais.</p>
                     </div>
                 </div>
             </section>
-            <section class="projetos">
-                <!-- In this section I'll show my projects and put links that lead to them! -->
-                <div class="head">
-                    <span>Meus Projetos</span>
+            <section id="projects">
+                <div class="project">
+                    <h1>Projeto Pokedex</h1>
+                    <img src="./assets/images/projetoPokedex.png" alt="imagem do projeto pokedex">
+                    <p></p>
                 </div>
-                <div class="project-container">
-                    <div class="slides">
-                        <input type="radio" name="slide" id="slide1" checked onclick="setValues(onclick)">
-                        <input type="radio" name="slide" id="slide2" onclick="setValues2(onclick)">
-                        <input type="radio" name="slide" id="slide3" onclick="setValues3(onclick)">
-                        <input type="radio" name="slide" id="slide4" onclick="setValues4(onclick)">
-                        
-                        <!-- s1 = slide 1 -->
-                        <div class="slide s1" id="img1">
-                            <img src="./assets/images/projetoPokedex.png" alt="Projeto Pokedex">
-                        </div>
-                        <div class="slide" id="img2">
-                            <img src="./assets/images/blogCodar.png" alt="Blog Codar">
-                        </div>
-                        <div class="slide" id="img3">
-                            <img src="./assets/images/agenda.png" alt="Projeto Agenda">
-                        </div>
-                        <div class="slide" id="img4">
-                            <img src="./assets/images/financialControl.png" alt="Projeto Agenda">
-                        </div>
-                    </div>
-                    <div class="navigation">
-                        <label for="slide1"></label>
-                        <label for="slide2"></label>
-                        <label for="slide3"></label>
-                        <label for="slide4"></label>
-                    </div>
+                <div class="project">
+                    <h1>Projeto Financial Control</h1>
+                    <img src="./assets/images/financialControl.png" alt="imagem do projeto Financial Control">
+                    <p></p>
                 </div>
-                <div class="links-container">
-                    <span id="project-desc">Projeto Javascript consumindo uma API</span>
-                    <a href="https://davisilvas.github.io/pokedex/" id="project-link" target="_blank" >Link do projeto Pokedex na web</a>
-                    <a href="https://github.com/Davisilvas/pokedex" id="git-link" target="_blank">Link do projeto Pokedex no Github</a>
+                <div class="project">
+                    <h1>Projeto Agenda Php</h1>
+                    <img src="./assets/images/agenda.png" alt="imagem do projeto agenda php">
+                    <p></p>
                 </div>
+                <div class="project">
+                    <h1>Projeto blogCodar</h1>
+                    <img src="./assets/images/blogCodar.png" alt="imagem do projeto blogCodar">
+                    <p></p>
+                </div>
+            </section>
+            <section id="aboutMe">
+                <h1>Sobre mim...</h1>
+                <p>Como já foi citado, sou focado no desenvolvimento web. Recentemente venho me dedicando ao máximo para desenvolver ao máximo essas hard skills e minha vontade por aprender mais sobre ela não para. Para além disso também possuo um inglês avançado. Atualmente me encontro a procura de um projeto que eu possa abraçar, para desenvolver ainda mais minhas técnicas e também minhas soft skills.</p>
             </section>
         </main>
         <footer>
