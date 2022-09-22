@@ -11,14 +11,16 @@
     position: relative;
     width: 100vw;
     font-family: 'Montserrat', sans-serif;
-    background-color: #e6e6e6;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .bg{
     background: linear-gradient(68.15deg, #4B9CF9 16.62%, #E8F3FE 85.61%);
     padding: 25px;
+    height: 82vh;
 }
 
 /* ********** HEADER ********** */
@@ -47,11 +49,6 @@ header nav ul li a{
 
 /* ********** PRESANTATION ********** */
 
-.presentation{
-    /* display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto; */
-}
 
 .group{
     display: flex;
@@ -79,7 +76,7 @@ header nav ul li a{
 .social-media{
     max-width: 900px;
     margin: auto;
-    margin-top: 55px;
+    margin-top: 85px;
 }
 
 .social-media ul{
@@ -94,4 +91,156 @@ header nav ul li a{
 
 .social-media ul li a img{
     width: 55px;
+}
+
+
+/* ********** ABILITIES ********** */
+
+#abilities{
+    height: 70vh;
+}
+
+.title{
+    margin-top: 50px;
+    margin-bottom: 75px;
+    font-size: 2.8rem;
+    letter-spacing: 1.2px;
+    position: relative;
+    left: 9%;
+}
+
+.stacks{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 100px;
+    max-width: 1500px;
+    height: 50vh;
+    margin: auto;
+    margin-top: -5px;
+}
+
+#abilities .tec img{
+    width: 75px;
+}
+
+.tec{
+    display: flex;
+    gap: 15px;
+}
+
+.tec img{
+    margin-bottom: 75px;
+}
+
+.tec div .tec-name{
+    font-size: 25px;
+    font-weight: 500;
+    color: #0F3375;
+}
+
+/* ********** PROJETOS ********** */
+
+
+#projects{
+    height: 115vh;
+    background: linear-gradient(68.15deg, #4B9CF9 16.62%, #E8F3FE 85.61%);
+}
+
+#projects h1{
+    padding-top: 25px;
+}
+
+.projects-container{
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 50px;
+    row-gap: 50px;
+    margin: auto;
+    margin-top: -50px;
+}
+
+.project{
+    max-width: 450px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.projects-container .project img{
+    width: 450px;
+    border-radius: 10px;
+}
+
+/* ********** ABOUTME ********** */
+
+#aboutMe{
+    height: 30vh;
+}
+
+#aboutMe div{
+    position: relative;
+    left: -35px;
+    display: flex;
+    gap: 10px;
+    max-width: 1350px;
+    margin: auto;
+    margin-top: -50px;
+}
+
+#aboutMe div p{
+    font-size: 1.5rem;
+}
+
+#aboutMe div a{
+    height: 75px;
+    width: 170px;
+    margin-top: 22px;
+    padding: 10px 20px;
+    font-size: 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color:#1557C0;
+    border: 1px solid #2382F7;
+    border-left: 10px solid #2382F7;
+    transition: all 0.25s ease-in-out;
+}
+
+#aboutMe div a:hover{
+    background-color: #fff;
+    color: #1557C0;
+}
+
+/* ********** FOOTER ********** */
+
+footer{
+    height: 30vh;
+    background: linear-gradient(68.15deg, #4B9CF9 16.62%, #E8F3FE 85.61%);
+}
+
+footer nav{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: -20px;
+}
+
+footer nav ul{
+    display: flex;
+    gap: 20px;
+    font-size: 2.4rem;
+}
+
+footer nav ul li{
+    list-style-type: none;
+    
+}
+
+footer nav ul li a{
+    text-decoration: none;
+    color: #000;
 }
