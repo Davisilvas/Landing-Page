@@ -47,6 +47,10 @@ header nav ul li a{
     color: #000;
 }
 
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+
 /* ********** PRESANTATION ********** */
 
 
@@ -143,7 +147,7 @@ header nav ul li a{
 
 
 #projects{
-    height: 115vh;
+    height: 120vh;
     background: linear-gradient(68.15deg, #4B9CF9 16.62%, #E8F3FE 85.61%);
 }
 
@@ -159,16 +163,27 @@ header nav ul li a{
     column-gap: 50px;
     row-gap: 50px;
     margin: auto;
-    margin-top: -50px;
+    margin-top: -65px;
+}
+.projects-container .project h1{
+    font-size: 2rem;
 }
 
 .project{
     max-width: 450px;
-    font-size: 18px;
-    font-weight: 500;
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.project p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.project p a{
+    color: #0F3375;
+    text-decoration: underline;
 }
 
 .projects-container .project img{
@@ -220,7 +235,15 @@ header nav ul li a{
 
 footer{
     height: 30vh;
-    background: linear-gradient(68.15deg, #4B9CF9 16.62%, #E8F3FE 85.61%);
+}
+
+.title-footer{
+    margin-top: 50px;
+    margin-bottom: 75px;
+    font-size: 2rem;
+    letter-spacing: 1.2px;
+    position: relative;
+    left: 9%;
 }
 
 footer nav{
@@ -232,7 +255,7 @@ footer nav{
 footer nav ul{
     display: flex;
     gap: 20px;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
 }
 
 footer nav ul li{
@@ -243,4 +266,8 @@ footer nav ul li{
 footer nav ul li a{
     text-decoration: none;
     color: #000;
+}
+
+footer nav ul li a:hover{
+    text-decoration: underline;
 }

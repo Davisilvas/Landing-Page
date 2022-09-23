@@ -3,4 +3,4 @@ https://coolors.co/palette/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8
 mono
 https://coolors.co/palette/0f3375-13459c-1557c0-196bde-2382f7-4b9cf9-77b6fb-a4cefc-cce4fd-e8f3fe
 
- background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
