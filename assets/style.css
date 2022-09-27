@@ -317,12 +317,10 @@ footer nav ul li a:hover{
 
 @media (max-width: 1200px){
     
-    body{
-        overflow-x: hidden;
-    }
 
     /* ****** MENU HAMB****** */
     .nav-list{
+        overflow-x: hidden;
         position: absolute;
         top: 8vh;
         right: 0;
@@ -680,6 +678,10 @@ footer nav ul li a:hover{
 @media (max-width: 380px){
     .bg{
         height: 103vh;
+    }
+
+    .group{
+        margin-top: 0px;
     }
 
     footer{
