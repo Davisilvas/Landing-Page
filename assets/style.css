@@ -322,7 +322,7 @@ footer nav ul li a:hover{
     .nav-list{
         overflow-x: hidden;
         position: absolute;
-        top: 8vh;
+        top: 10vh;
         right: 0;
         width: 100vw;
         height: 90vh;
@@ -618,7 +618,7 @@ footer nav ul li a:hover{
 @media (max-width: 400px){
     
     .bg{
-        height: 84vh;
+        height: 103vh;
     }
     
     /* ****** Presantation ****** */
@@ -670,15 +670,15 @@ footer nav ul li a:hover{
         margin-top: 35%;
     }
 
-    #aboutMe div{
+    /* #aboutMe div{
         
-    }
+    } */
 }
 
 @media (max-width: 380px){
-    .bg{
+    /* .bg{
         height: 103vh;
-    }
+    } */
 
     .group{
         margin-top: 0px;
