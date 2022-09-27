@@ -317,6 +317,10 @@ footer nav ul li a:hover{
 
 @media (max-width: 1200px){
     
+    body{
+        overflow-x: hidden;
+    }
+
     /* ****** MENU HAMB****** */
     .nav-list{
         position: absolute;
