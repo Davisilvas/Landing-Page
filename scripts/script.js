@@ -17,12 +17,16 @@ class MobileNavbar{
         });
     }
 
-
     handleClick() {
         this.navList.classList.toggle(this.activeClass);
         this.mobileMenu.classList.toggle(this.activeClass);
         this.animateLinks();
     }
+
+    // this.navLinks.addEventListener('click', function(){
+    //     mobileMenu.classList.remove('active')
+    //     navList.classList.remove('active')
+    // })
     
     addClickEvent() {
         this.mobileMenu.addEventListener("click", this.handleClick);
@@ -36,9 +40,48 @@ class MobileNavbar{
     }
 }
 
+const menuItems = document.querySelectorAll(".nav-list a")
+
 const mobileNavbar = new MobileNavbar(
     ".mobile-menu",
     ".nav-list",
     ".nav-list li",
   );
   mobileNavbar.init();
+
+menuItems.forEach(item => {
+    item.addEventListener('click', scrollToIdOnClick);
+})
+
+// smooth scroll
+function scrollToIdOnClick(event){
+    event.preventDefault()
+    const to = getScrollTopByHref(event.target)
+    // removingClass()
+    scrollToPosition(to)
+}
+
+function getScrollTopByHref(element){
+    const id = element.getAttribute('href');
+    return document.querySelector(id).offsetTop
+}
+
+function scrollToPosition(to){
+    window.scroll({
+        top: to,
+        behavior:'smooth'
+    })
+}
+
+// Removendo classe
+
+function removing(){
+    let mobileMenu = document.querySelector('.mobile-menu');
+    let navList = document.querySelector('.nav-list');
+
+    // && navList.classList('active')
+    if(this.mobileMenu.classList('active')){
+        navList.classList.remove('active')
+        mobileMenu.classList.remove('active')
+    }
+}

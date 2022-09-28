@@ -473,7 +473,7 @@ footer nav ul li a:hover{
     /* ****** Presantation ****** */
     
     .bg{
-        height: 103vh;
+        height: 100vh;
     }
     
     .group{
@@ -616,11 +616,6 @@ footer nav ul li a:hover{
 }
 
 @media (max-width: 400px){
-    
-    .bg{
-        height: 103vh;
-    }
-    
     /* ****** Presantation ****** */
     .div-description h1{
         font-size: 26px;
@@ -669,16 +664,9 @@ footer nav ul li a:hover{
     footer{
         margin-top: 35%;
     }
-
-    /* #aboutMe div{
-        
-    } */
 }
 
 @media (max-width: 380px){
-    /* .bg{
-        height: 103vh;
-    } */
 
     .group{
         margin-top: 0px;
