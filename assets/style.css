@@ -345,7 +345,7 @@ footer nav ul li a:hover{
 
     .nav-list ul li{
         margin-left: 0;
-        opacity: 0;
+        /* opacity: 0; */
     }
 
     .mobile-menu {

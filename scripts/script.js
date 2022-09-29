@@ -22,11 +22,6 @@ class MobileNavbar{
         this.mobileMenu.classList.toggle(this.activeClass);
         this.animateLinks();
     }
-
-    // this.navLinks.addEventListener('click', function(){
-    //     mobileMenu.classList.remove('active')
-    //     navList.classList.remove('active')
-    // })
     
     addClickEvent() {
         this.mobileMenu.addEventListener("click", this.handleClick);
@@ -71,7 +66,13 @@ function scrollToPosition(to){
         top: to,
         behavior:'smooth'
     })
+    removing()
 }
+
+document.body.addEventListener('scroll', ()=>{
+    removing();
+    console.log('testando')
+})
 
 // Removendo classe
 
@@ -79,8 +80,7 @@ function removing(){
     let mobileMenu = document.querySelector('.mobile-menu');
     let navList = document.querySelector('.nav-list');
 
-    // && navList.classList('active')
-    if(this.mobileMenu.classList('active')){
+    if(mobileMenu.classList.contains('active')){
         navList.classList.remove('active')
         mobileMenu.classList.remove('active')
     }
