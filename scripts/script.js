@@ -52,7 +52,6 @@ menuItems.forEach(item => {
 function scrollToIdOnClick(event){
     event.preventDefault()
     const to = getScrollTopByHref(event.target)
-    // removingClass()
     scrollToPosition(to)
 }
 
@@ -68,11 +67,6 @@ function scrollToPosition(to){
     })
     removing()
 }
-
-document.body.addEventListener('scroll', ()=>{
-    removing();
-    console.log('testando')
-})
 
 // Removendo classe
 

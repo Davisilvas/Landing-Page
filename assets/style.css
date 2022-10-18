@@ -31,14 +31,12 @@ body{
 header{
     display: flex;
     justify-content: space-around;
-    /* padding-top: 50px; */
     height: 10vh;
-    /* margin-top: -25px; */
     font-size: 2.4rem;
     font-weight: 500;
 }
 
-@keyframes navLinkFade {
+/* @keyframes navLinkFade {
     from {
       opacity: 0;
       transform: translateX(50px);
@@ -47,7 +45,7 @@ header{
       opacity: 1;
       transform: translateX(0);
     }
-}
+} */
 
 .mobile-menu {
     display: none;
@@ -100,15 +98,18 @@ header{
 
 .group{
     display: flex;
-    max-width: 1100px;
+    width: 65%;
+    height: 75%;
     margin: auto;
-    margin-top: 155px;
+    margin-top: 65px;
     gap: 55px;
 }
 
 .group img{
-    width: 250px;
+    width: 25%;
+    height: 50%;
     border-radius: 10px;
+    align-self: center;
 }
 
 .group h1{
@@ -118,11 +119,11 @@ header{
 
 .group p{
     font-size: 1.9rem;
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 .social-media{
-    max-width: 900px;
+    width: 100%;
     margin: auto;
     margin-top: 85px;
 }
@@ -130,7 +131,7 @@ header{
 .social-media ul{
     display: flex;
     gap: 45px;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .social-media ul li{
@@ -139,6 +140,7 @@ header{
 
 .social-media ul li a img{
     width: 55px;
+    height: 45px;
 }
 
 
@@ -162,7 +164,7 @@ header{
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
     column-gap: 100px;
-    max-width: 1200px;
+    width: 67%;
     height: 50vh;
     margin: auto;
     margin-top: -5px;
@@ -197,7 +199,8 @@ header{
 }
 
 .projects-container{
-    max-width: 1100px;
+    width: 65%;
+    height: 80%;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
@@ -205,22 +208,27 @@ header{
     row-gap: 50px;
     margin: auto;
     margin-top: -65px;
+    overflow-y: scroll;
 }
 
 .project h1{
     font-size: 2rem;
+    width: 100%;
 }
 
 .project{
-    max-width: 450px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
 .project p{
+    align-self: center;
+    transform: translateX(-20%);
     font-size: 1.2rem;
     font-weight: 500;
+    width: 70%;
 }
 
 .project p a{
@@ -237,7 +245,7 @@ header{
 /* ********** ABOUTME ********** */
 
 #aboutMe{
-    height: 30vh;
+    height: 45vh;
 }
 
 #aboutMe div{
@@ -245,7 +253,8 @@ header{
     left: -35px;
     display: flex;
     gap: 10px;
-    max-width: 1100px;
+    width: 60%;
+
     margin: auto;
     margin-top: -50px;
 }
@@ -278,11 +287,15 @@ header{
 
 footer{
     height: 30vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: #1557C0;
+    color: #fff;
+    padding-top: 45px;
 }
 
 .title-footer{
-    margin-top: 50px;
-    margin-bottom: 75px;
     font-size: 2rem;
     letter-spacing: 1.2px;
     position: relative;
@@ -290,9 +303,10 @@ footer{
 }
 
 footer nav{
-    max-width: 1000px;
-    margin: auto;
-    margin-top: -20px;
+    width: 90%;
+    position: relative;
+    left: 20%;
+    top: 15%;
 }
 
 footer nav ul{
@@ -308,14 +322,51 @@ footer nav ul li{
 
 footer nav ul li a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 footer nav ul li a:hover{
     text-decoration: underline;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1550px){
+    .projects-container{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        width: 50%;
+        height: 75%;
+        row-gap: 0px
+    }
+
+    .project{
+        margin: auto;
+        width: 98%;
+    }
+
+    .project h1{
+        align-self: center;
+    }
+
+    .project p{
+        align-self: center;
+        margin-top: 10px;
+        width: 100%;
+        transform: translateX(0);
+    }
+    
+    .project img{
+        width: 450px;
+        align-self: center;
+    }
+}
+@media (max-width: 1400px){
+    .stacks{
+        height: 60vh;
+    }
+}
+
+
+@media (max-width: 1280px){
     
 
     /* ****** MENU HAMB****** */
@@ -355,14 +406,8 @@ footer nav ul li a:hover{
     /* ****** PRESANTATION ****** */
 
     .group{
-        flex-direction: column-reverse;
         align-items: center;
-        margin-top: 20px;
-        max-width: 75%;
-    }
-
-    .group img{
-        width: 170px;
+        width: 90%;
     }
 
     .group h1{
@@ -374,7 +419,7 @@ footer nav ul li a:hover{
     }
 
     .social-media{
-        max-width: 80%;
+        width: 100%;
     }
 
     .social-media ul{
@@ -390,42 +435,33 @@ footer nav ul li a:hover{
     .stacks{
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
-        max-width: 75%;
+        width: 60%;
         overflow-y: scroll;
         height: 45vh;
         column-gap: 50px;
         row-gap: 15px;
-        margin-top: -33px;
+        margin-top: -35px;
+        column-gap: 25px;
+    }
+
+    .tec div{
+        width: 50%;
     }
 
     /* ****** PROJECTS ****** */
 
     #projects{
-        height: 100vh;
+        height: 90vh;
     }
     
-    .projects-container{
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        max-width: 70%;
-        height: 90vh;
-        overflow-y: scroll;
-    }
-
-    .project{
-        margin: auto;
-        max-width: 90%;
-    }
-
-    .project img{
-        width: 390px;
-        margin: auto;
-    }
-
     /* ****** ABOUT ****** */
 
+    #aboutMe{
+        height: 38vh;
+    }
+    
     #aboutMe div{
-        max-width: 75%;
+        width: 75%;
     }
 
     #aboutMe div p{
@@ -439,7 +475,7 @@ footer nav ul li a:hover{
     }
 
     footer nav{
-        max-width: 65%;
+        width: 65%;
     }
 
     footer nav ul{
@@ -449,11 +485,18 @@ footer nav ul li a:hover{
 
 }
 
-@media (max-width: 950px){
+@media (max-width: 975px){
     .bg{
         height: 87vh;
     }
 
+    .group{
+        gap: 15px;
+    }
+
+    .div-description{
+        margin-top: 70px;
+    }
     /* ****** aboutMe ****** */
     
     #aboutMe div{
@@ -467,13 +510,21 @@ footer nav ul li a:hover{
     #aboutMe div p{
         font-size: 18px;
     }
+
+    .project{
+        width: 80%;
+    }
+
+    .project img{
+        width: 370px;
+    }
 }
 
-@media (max-width: 750px){
+@media (max-width: 830px){
     /* ****** Presantation ****** */
     
     .bg{
-        height: 100vh;
+        height: 75vh;
     }
     
     .group{
@@ -481,7 +532,7 @@ footer nav ul li a:hover{
     }
     
     .div-description h1{
-        font-size: 26px;
+        font-size: 2rem;
     }
 
     .div-description p{
@@ -496,6 +547,7 @@ footer nav ul li a:hover{
 
     .stacks{
         column-gap: 20px;
+        width: 80%;
     }
     
     .tec img{
@@ -506,12 +558,21 @@ footer nav ul li a:hover{
         font-size: 20px;
     }
 
-    .tec-desc{
-        font-size: 15px;
+    .tec-desc p{
+        width: 100%;
+        font-size: 14px;
     }
     
     /* ****** Projetos ****** */
 
+    .projects-container{
+        width: 70%;
+    }
+    
+    .project{
+        width: 90%;
+    }
+    
     .project h1{
         font-size: 24px;
     }
@@ -526,6 +587,7 @@ footer nav ul li a:hover{
         height: 65px;
         width: 160px;
         font-size: 18px;
+        align-self: center;
     }
 
     /* ****** Footer ****** */
@@ -535,11 +597,11 @@ footer nav ul li a:hover{
     }
 }
 
-@media (max-width: 670px){
+@media (max-width: 680px){
     /* ****** Projetos ****** */
 
     .project{
-        max-width: 95%;
+        width: 95%;
     }
 
     .project p{
@@ -547,7 +609,7 @@ footer nav ul li a:hover{
     }
 
     .project img{
-        width: 100%;
+        width: 95%;
     }
 
     /* ****** aboutMe ****** */
@@ -559,6 +621,7 @@ footer nav ul li a:hover{
     
     #aboutMe div p{
         font-size: 16px;
+        margin-left: 10px;
     }
 
     /* ****** Footer ****** */
@@ -570,6 +633,19 @@ footer nav ul li a:hover{
 @media (max-width: 550px){
     /* ****** Presantation ****** */
 
+    .group{
+        flex-direction: column-reverse;
+        margin-top: 0px;
+    }
+
+    .group img{
+        width: 35%;
+    }
+
+    .div-description {
+        margin-top: 0px;
+    }
+    
     .social-media ul li a img{
         width: 40px;
     }
@@ -583,7 +659,7 @@ footer nav ul li a:hover{
     }
 
     .tec img{
-        width: 65px;
+        width: 60px;
     }
 
     /* ****** Footer ****** */
@@ -593,8 +669,17 @@ footer nav ul li a:hover{
     }
 
     footer nav{
-        max-width: 90%;
+        width: 90%;
     }
+
+    footer nav ul{
+        display: block;
+    }
+
+    footer nav ul li{
+        margin-bottom: 10px;
+    }
+
 }
 
 @media (max-width: 460px){
@@ -603,7 +688,7 @@ footer nav ul li a:hover{
     }
 
     .title-footer{
-        font-size: 22px;
+        font-size: 20px;
     }
 
     footer nav ul{
@@ -638,15 +723,11 @@ footer nav ul li a:hover{
     /* ****** Abilities ****** */
 
     .tec img{
-        width: 40px;
+        width: 50px;
     }
     
     .tec-name{
-        font-size: 18px;
-    }
-
-    .tec-desc{
-        font-size: 15px;
+        font-size: 16px;
     }
 
     /* ****** Project ****** */
@@ -664,14 +745,17 @@ footer nav ul li a:hover{
     footer{
         margin-top: 35%;
     }
+
+    .title-footer{
+        left: 5%;
+    }
 }
 
 @media (max-width: 380px){
-
-    .group{
-        margin-top: 0px;
+    .bg{
+        height: 87vh;
     }
-
+    
     footer{
         margin-top: 45%;
     }
